@@ -1,0 +1,7 @@
+{"ts":1368446704135,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1368446705824,"patch":[[{"diffs":[[1,"#! /app/bin/node\n"]],"start1":0,"start2":0,"length1":0,"length2":17}]],"length":17,"saved":false}
+{"ts":1368446737153,"patch":[[{"diffs":[[0,"in/node\n"],[1,"function sayHello() {\n  console.log('Hello');\n}\nsayHello();\nexit();"]],"start1":9,"start2":9,"length1":8,"length2":75}]],"length":84,"saved":false}
+{"ts":1368446738620,"patch":[[{"diffs":[[0,"\nexit();"],[1,"\n"]],"start1":76,"start2":76,"length1":8,"length2":9}]],"length":85,"saved":false}
+{"ts":1368446743798,"patch":[[{"diffs":[[0,"unction "],[-1,"sayHello"],[1,"getWeather"],[0,"() {\n  c"]],"start1":18,"start2":18,"length1":24,"length2":26}]],"length":87,"saved":false}
+{"ts":1368446748944,"patch":[[{"diffs":[[0,"le.log('"],[-1,"Hello"],[1,"getWeather"],[0,"');\n}\nsa"]],"start1":48,"start2":48,"length1":21,"length2":26}]],"length":92,"saved":false}
+{"ts":1368446751830,"patch":[[{"diffs":[[0,";\n}\n"],[-1,"sayHello"],[1,"getWeather"],[0,"();\n"]],"start1":68,"start2":68,"length1":16,"length2":18}]],"length":94,"saved":false}

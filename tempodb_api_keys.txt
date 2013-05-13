@@ -1,0 +1,7 @@
+=== mycellarconditions Config Vars
+PATH:               bin:node_modules/.bin:/usr/local/bin:/usr/bin:/bin
+TEMPODB_API_HOST:   api.tempo-db.com
+TEMPODB_API_KEY:    18b5f055f1af4bb69e60698ac5812ccf
+TEMPODB_API_PORT:   443
+TEMPODB_API_SECRET: 9e8380a60d384761a98b722eec55091d
+TEMPODB_API_SECURE: True

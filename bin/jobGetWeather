@@ -1,0 +1,6 @@
+#! /app/bin/node
+function getWeather() {
+  console.log('getWeather');
+}
+getWeather();
+exit();
