@@ -15,3 +15,4 @@
 {"ts":1368545253970,"patch":[[{"diffs":[[0,"\";\n\n"],[-1,"// Coordonnees de Rennes\n//var latitude  = \"48.1076\";\n//var longitude = \"-1.6845\";\n\n"],[0,"var "]],"start1":363,"start2":363,"length1":92,"length2":8}]],"length":942,"saved":false}
 {"ts":1368545256089,"patch":[[{"diffs":[[0,"e {\n"],[-1,"      //console.log('data: ' + util.inspect(data));\n"],[0,"    "]],"start1":589,"start2":589,"length1":60,"length2":8}]],"length":890,"saved":false}
 {"ts":1368545272806,"patch":[[{"diffs":[[0,"ate("],[-1,"data.currently.time"],[0,");\n "]],"start1":701,"start2":701,"length1":27,"length2":8}]],"length":871,"saved":false}
+{"ts":1368546415869,"patch":[[{"diffs":[[0,"();\n"],[-1,"exit();"],[0,"\n"]],"start1":859,"start2":859,"length1":12,"length2":5}]],"length":864,"saved":false}

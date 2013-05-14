@@ -36,4 +36,4 @@ forecast.get(latitude, longitude, options, function (err, res, data) {
 }
 
 getWeather();
-exit();
+
