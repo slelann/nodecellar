@@ -8,11 +8,10 @@
     , "debug": "0.5.x"
     , "express": "2.5.x"
     , "jade": "0.20.x"
-    , "mongoose": "2.5.x"
     , "implementjs": "0.1.x"    
   },
   "scripts": {
-     "start": "make"
+     "start": "node app.js"
   },
   "engines": {
     "node": "0.10.x",
