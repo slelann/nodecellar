@@ -49,23 +49,23 @@ function logData (err, res, data) {
 /**
  * insertWeatherData function to store values in tempodb series
  */
-var tempOutsideKey = 'location:outside.temperature.1';
-var humOutsideKey  = 'location:outside.humidity.1';
 
 function insertWeatherData (err, res, data) {
 	console.log('insertWeatherData');
 	if (err) throw err;
 	else {
+		var tempOutsideKey = 'location:outside.temperature.1';
+		var humOutsideKey  = 'location:outside.humidity.1';
 		var temp=data.currently.temperature;
 		var hum=data.currently.humidity * 100;
 		var date=new Date();
 		
-		var tempData = [{t:date, v:temp}];
-		var humData  = [{t:date, v:hum}];
-		var cb = function(result){ console.log(result.response+': '+ JSON.stringify(result.body)); };
+		var tempoData = [{key:tempOutsideKey, v: data.currently.temperature},
+					{key:humOutsideKey, v: data.currently.humidity * 100}];
+						
+		var cb = function(result){ console.log('Weather data insertion for ' + date + ' : ' + result.response); };
 
-		tempodb.write_key(tempOutsideKey, tempData, cb);
-        tempodb.write_key(humOutsideKey, humData, cb);
+		tempodb.write_bulk(new Date(),tempoData,cb);
 	}
 }
 
