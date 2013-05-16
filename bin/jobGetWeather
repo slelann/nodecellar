@@ -1,7 +1,13 @@
 #! /app/bin/node
 var Forecast = require('forecast.io');
-var tempodb = require('');
 
+var TempoDBClient = require('tempodb').TempoDBClient;
+var tempodb = new TempoDBClient('18b5f055f1af4bb69e60698ac5812ccf', '9e8380a60d384761a98b722eec55091d');
+
+
+/**
+ * get Forecast.io current weather data
+ */
 function getWeather() {
 	
 	//  APIKey: process.env.FORECAST_API_KEY
@@ -21,10 +27,13 @@ function getWeather() {
 		exclude: "minutely,hourly,daily,flags,alerts"
 	};
 		
-	forecast.get(latitude, longitude, options, logData);
+	//forecast.get(latitude, longitude, options, logData);
+	forecast.get(latitude, longitude, options, insertWeatherData);
 }
 
-// logData
+/**
+ * Simple function to log current weather data collected
+ */
 function logData (err, res, data) {
 	if (err) throw err;
 	else {
@@ -37,15 +46,29 @@ function logData (err, res, data) {
 	};
 }
 
-// logData
-function insertData (err, res, data) {
+/**
+ * insertWeatherData function to store values in tempodb series
+ */
+var tempOutsideKey = 'location:outside.temperature.1';
+var humOutsideKey  = 'location:outside.humidity.1';
+
+function insertWeatherData (err, res, data) {
+	console.log('insertWeatherData');
 	if (err) throw err;
 	else {
 		var temp=data.currently.temperature;
 		var hum=data.currently.humidity * 100;
 		var date=new Date();
-	};
+		
+		var tempData = [{t:date, v:temp}];
+		var humData  = [{t:date, v:hum}];
+		var cb = function(result){ console.log(result.response+': '+ JSON.stringify(result.body)); };
+
+		tempodb.write_key(tempOutsideKey, tempData, cb);
+        tempodb.write_key(humOutsideKey, humData, cb);
+	}
 }
 
+// MAIN
 getWeather();
 
