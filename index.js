@@ -1,10 +1,15 @@
-var server = require("./server");
-var router = require("./router");
-var requestHandlers = require("./requestHandlers");
-var handle = {};
+// First extend the express server's prototype
+require('./lib/config');
 
-handle["/"] = requestHandlers.start;
-handle["/start"] = requestHandlers.start;
-handle["/series"] = requestHandlers.series;
+var debug = require('debug')('app'),
+server = require('./lib/server'),
+db = require('./lib/db'),
+handler = require('./lib/handler')(db);
 
-server.start(router.route, handle);
+// Setup routes
+require('./lib/router')(server, handler);
+
+// All set, start listening!
+server.listen(process.env.PORT);
+debug("Express server listening on port %d in %s mode", server.address().port, process.env.NODE_ENV);
+
