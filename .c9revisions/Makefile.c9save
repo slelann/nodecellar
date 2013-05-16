@@ -1,0 +1,16 @@
+{"ts":1368607383163,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1368607384388,"patch":[[{"diffs":[[1,".DEFAULT_GOAL = run\nREPORTER = spec\nTESTS = test/*.js\nDEBUG = app,config,db,server,router,handler\n\ntest:\nnode_modules/.bin/mocha --reporter $(REPORTER) $(TESTS)\n\nrun:\nDEBUG=$(DEBUG) node app.js\n\n.PHONY: test run"]],"start1":0,"start2":0,"length1":0,"length2":211}]],"length":211,"saved":false}
+{"ts":1368607388317,"patch":[[{"diffs":[[0,"\n\ntest:\n"],[1,"    "],[0,"node_mod"]],"start1":97,"start2":97,"length1":16,"length2":20}]],"length":215,"saved":false}
+{"ts":1368607389858,"patch":[[{"diffs":[[0,")\n\nrun:\n"],[1,"    "],[0,"DEBUG=$("]],"start1":163,"start2":163,"length1":16,"length2":20}]],"length":219,"saved":false}
+{"ts":1368607419568,"patch":[[{"diffs":[[0,"er\n\n"],[-1,"test:\n    node_modules/.bin/mocha --reporter $(REPORTER) $(TESTS)\n"],[0,"\nrun"]],"start1":95,"start2":95,"length1":74,"length2":8}]],"length":153,"saved":false}
+{"ts":1368607424617,"patch":[[{"diffs":[[0,"andler\n\n"],[-1,"\n"],[0,"run:\n   "]],"start1":91,"start2":91,"length1":17,"length2":16}]],"length":152,"saved":false}
+{"ts":1368607428584,"patch":[[{"diffs":[[0,"\n.PHONY:"],[-1," test"],[0," run"]],"start1":135,"start2":135,"length1":17,"length2":12}]],"length":147,"saved":false}
+{"ts":1368607476183,"patch":[[{"diffs":[[0,"run:"],[-1,"\n   "],[0," DEB"]],"start1":99,"start2":99,"length1":12,"length2":8}]],"length":143,"saved":false}
+{"ts":1368607479249,"patch":[[{"diffs":[[0,"js\n\n"],[-1,".PHONY: run"]],"start1":128,"start2":128,"length1":15,"length2":4}]],"length":132,"saved":false}
+{"ts":1368607489617,"patch":[[{"diffs":[[0,"app.js\n\n"],[1,".PHONY: run"]],"start1":124,"start2":124,"length1":8,"length2":19}]],"length":143,"saved":false}
+{"ts":1368607490891,"patch":[[{"diffs":[[0,"er\n\nrun:"],[1,"  "],[0," DEBUG=$"]],"start1":95,"start2":95,"length1":16,"length2":18}]],"length":145,"saved":false}
+{"ts":1368607492592,"patch":[[{"diffs":[[0,"r\n\nrun: "],[1,"\n  "],[0,"  DEBUG="]],"start1":96,"start2":96,"length1":16,"length2":19}]],"length":148,"saved":false}
+{"ts":1368607588673,"patch":[[{"diffs":[[0,"(DEBUG) "],[1,"\n    "],[0,"node app"]],"start1":116,"start2":116,"length1":16,"length2":21}]],"length":153,"saved":false}
+{"ts":1368607608841,"patch":[[{"diffs":[[0,"(DEBUG) "],[-1,"\n  "],[0,"  node a"]],"start1":116,"start2":116,"length1":19,"length2":16}]],"length":150,"saved":false}
+{"ts":1368607610786,"patch":[[{"diffs":[[0,"$(DEBUG)"],[-1,"  "],[0," node ap"]],"start1":115,"start2":115,"length1":18,"length2":16}]],"length":148,"saved":false}
+{"ts":1368607779413,"patch":[[{"diffs":[[0,"run\n"],[-1,"REPORTER = spec\nTESTS = test/*.js\n"],[0,"DEBU"]],"start1":16,"start2":16,"length1":42,"length2":8}]],"length":114,"saved":false}

@@ -2,9 +2,17 @@
   "name": "node-mycellarconditions",
   "version": "0.0.1",
   "dependencies": {
-    "tempodb" : "0.3.2",
-    "forecast.io": "0.0.x",
-    "util": "0.4.x"
+      "tempodb" : "0.3.2"
+    , "forecast.io": "0.0.x"
+    , "util": "0.4.x"
+    , "debug": "0.5.x"
+    , "express": "2.5.x"
+    , "jade": "0.20.x"
+    , "mongoose": "2.5.x"
+    , "implementjs": "0.1.x"    
+  },
+  "scripts": {
+     "start": "make"
   },
   "engines": {
     "node": "0.10.x",

@@ -1,0 +1,7 @@
+{"ts":1368606827647,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1368606829255,"patch":[[{"diffs":[[1,"var debug = require('debug')('db');"]],"start1":0,"start2":0,"length1":0,"length2":35}]],"length":35,"saved":false}
+{"ts":1368619714465,"patch":[[{"diffs":[[0,")('db');"],[1,"\n\nmodule.exports.forecastio = require('./forecastio')"]],"start1":27,"start2":27,"length1":8,"length2":61}]],"length":88,"saved":false}
+{"ts":1368619718758,"patch":[[{"diffs":[[0,"b');"],[-1,"\n\nmodule.exports.forecastio = require('./forecastio')"]],"start1":31,"start2":31,"length1":57,"length2":4}]],"length":35,"saved":false}
+{"ts":1368619720022,"patch":[[{"diffs":[[-1,"var debug = require('debug')('db');"],[1,"module.exports.forecastio = require('./forecastio')"]],"start1":0,"start2":0,"length1":35,"length2":51}]],"length":51,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1368621479856,"patch":[[{"diffs":[[-1,"module.exports.forecastio = require('./forecastio"],[1,"var debug = require('debug')('db"],[0,"')"],[1,";"]],"start1":0,"start2":0,"length1":51,"length2":35}]],"length":35,"saved":false}
+{"ts":1368621489551,"patch":[[{"diffs":[[-1,"var debug = require('debug')('"],[1,"module.exports.forecastio = require('./forecastio')\nmodule.exports.tempodb = require('./tempo"],[0,"db')"],[-1,";"]],"start1":0,"start2":0,"length1":35,"length2":97}]],"length":97,"saved":false}

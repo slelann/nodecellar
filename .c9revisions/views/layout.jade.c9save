@@ -1,0 +1,3 @@
+{"ts":1368605445940,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"!!!\nhtml\n  head\n    title= title\n    link(rel='stylesheet', href='/stylesheets/style.css')\n  body!= body"]],"start1":0,"start2":0,"length1":0,"length2":104}]],"length":104}
+{"contributors":[],"silentsave":true,"ts":1368605463807,"patch":[[{"diffs":[[0," href='/"],[-1,"stylesheet"],[1,"css"],[0,"s/style."]],"start1":59,"start2":59,"length1":26,"length2":19}]],"length":97,"saved":false}
+{"ts":1368605464649,"patch":[[{"diffs":[[0,"ef='/css"],[-1,"s"],[0,"/style.c"]],"start1":62,"start2":62,"length1":17,"length2":16}]],"length":96,"saved":false}
