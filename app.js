@@ -1,15 +1,22 @@
-// First extend the express server's prototype
-require('./lib/config');
-
+// -- Module dependencies.
 var debug = require('debug')('app'),
-server = require('./lib/server'),
-db = require('./lib/db'),
-handler = require('./lib/handler')(db);
+	express = require('express'),
+    http = require('http'),
+    db = require('./lib/db');
 
-// Setup routes
-require('./lib/router')(server, handler);
+// -- Create Express instance and export
+var app = module.exports = express();
+    
+// -- Apply Config
+require('./lib/config').apply(app);
 
-// All set, start listening!
-server.listen(process.env.PORT);
-debug("Express server listening on port %d in %s mode", server.address().port, process.env.NODE_ENV);
+//Handler
+var handler = require('./lib/handler/index')(db);
+
+// -- Routes
+require('./lib/router/index')(app, handler);
+
+http.createServer(app).listen(process.env.PORT, function(){
+	debug("Express server listening on port %d in %s mode", process.env.PORT, process.env.NODE_ENV);
+});
 

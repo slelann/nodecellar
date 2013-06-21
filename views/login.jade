@@ -1,9 +1,80 @@
-form(method="post")
-	h1 Hello!
-	p.subheading Please Login To Your Account
-	label Username
-	input(type="text", name="user", id='user-tf').span4.required
-	label Password
-	input(type="password", name="pass", id='pass-tf').span4.required
-	button(type="submit")
+extends layout
+
+block styles
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Arvo')
+		style(type="text/css")
+			body {
+				padding-top: 40px;
+				padding-bottom: 40px;
+				background-color: #f5f5f5;
+			}
+			.form-signin {
+				max-width: 300px;
+				padding: 19px 29px 29px;
+				margin: 0 auto 20px;
+				background-color: #fff;
+				border: 1px solid #e5e5e5;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+				border-radius: 5px;
+					-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+					-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+				box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			}
+			.form-signin .form-signin-heading,
+			.form-signin .checkbox {
+				margin-bottom: 10px;
+			}
+			.form-signin input[type="text"],
+			.form-signin input[type="password"] {
+				font-size: 16px;
+				height: auto;
+				margin-bottom: 15px;
+				padding: 7px 9px;
+			}
+			.myheader {
+				width: 100%;
+				display: block;
+				height: 100px;
+			}
+			.mytitle {
+				font-family: 'Arvo', serif;
+				display: inline-block;
+				margin-top: 25px;
+			}
+			.mylogo {
+				float: left;
+				padding-right: 25px;
+			}
+			
+//block append scripts
+//	script(src='/js/raphael-min.js')
+
+block nav
+	.navbar
+block content
+	script.
+		// $(document).ready(function() {
+		// 	Raphael("logo",100,100, function() {
+		// 		var r=this, 
+		// 			logo=r.path("M17.5,19.508V8.626h-3.999v10.881c-1.404,0.727-2.375,2.178-2.375,3.869c0,2.416,1.959,4.375,4.375,4.375s4.375-1.959,4.375-4.375C19.876,21.686,18.905,20.234,17.5,19.508zM20.5,5.249c0-2.757-2.244-5-5.001-5s-4.998,2.244-4.998,5v12.726c-1.497,1.373-2.376,3.314-2.376,5.4c0,4.066,3.31,7.377,7.376,7.377s7.374-3.311,7.374-7.377c0-2.086-0.878-4.029-2.375-5.402V5.249zM20.875,23.377c0,2.963-2.41,5.373-5.375,5.373c-2.962,0-5.373-2.41-5.373-5.373c0-1.795,0.896-3.443,2.376-4.438V5.251c0-1.654,1.343-3,2.997-3s3,1.345,3,3v13.688C19.979,19.934,20.875,21.582,20.875,23.377zM22.084,8.626l4.5,2.598V6.029L22.084,8.626z")
+		// 				.attr({fill: "#000000", stroke: "none"});
+		// 	});
+		// });
+
+	.container
+		.myheader
+			img(src="/img/noun_project_climate_change.svg").mylogo
+			//#logo
+			h1.mytitle My cellar conditions
+		form(action="/login", method="post").form-signin
+			h2.span8.form-signin-heading Please Login
+			input(type="text", name="username", id='username', placeholder='Nickname').input-block-level
+			input(type="password", name="password", id='password', placeholder='Password').input-block-level
+			button(type="submit").btn.btn-large.btn-primary Login
+		
+block foot			
 	

@@ -1,5 +1,29 @@
-h1= title
-p Welcome to #{title}
-form(action="/upload", method="post", enctype="multipart/form-data")
-  input(type="file", name="csvuploadfile")
-  input(type="submit")
+extends layout
+
+block append scripts
+	script(src="http://code.jquery.com/jquery-1.9.1.js")
+	script(src="/js/bootstrap-fileupload.js")
+
+block append styles
+	link(rel='stylesheet', href='/css/bootstrap-fileupload.min.css')
+	// link(href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css', rel='stylesheet')		
+
+block content
+	#wrap
+		.container
+			h2 #{title}
+			p
+			form(action="/upload", method="post", enctype="multipart/form-data")
+				div(data-provides="fileupload").fileupload.fileupload-new
+					.input-append
+						.uneditable-input.span3
+							i.icon-file.fileupload-exists
+							span.fileupload-preview 
+						span.btn.btn-file
+							span.fileupload-new Select file
+							span.fileupload-exists Change
+							input(type="file",name="fileupload")
+						a(href="#", data-dismiss="fileupload").btn.fileupload-exists Remove
+				p
+				input(type="submit").btn.btn-primary Upload
+

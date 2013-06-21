@@ -1,6 +1,78 @@
 !!!
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/css/style.css')
-  body!= body
+	head
+		title= title
+
+		block scripts
+			script(src='/js/bootstrap.min.js')
+			script(src="http://code.jquery.com/jquery-1.10.0.js")
+			
+		block styles
+			link(rel='stylesheet', href='/css/style.css')
+			link(rel='stylesheet', href='/css/bootstrap.min.css')
+			link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+			style(type='text/css')
+				html,body {
+					height: 100%;
+				}
+				#wrap {
+					min-height: 100%;
+					height: auto !important;
+					height: 100%;
+					width: 100%;
+					margin: 0 auto -60px;
+				}
+				#push,
+				#footer {
+					height: 60px;
+				}
+				#footer {
+					background-color: #f5f5f5;
+				}
+				@media (max-width: 767px) {
+					#footer {
+						margin-left: -40px;
+						margin-right: -40px;
+						padding-left: 40px;
+						padding-right: 40px;
+					}
+				}
+				.container {
+					width: auto;
+					max-width: 90%;
+				}
+				.container .credit {
+					margin: 20px 0;
+				}
+
+	body
+		block nav
+			.navbar
+				.navbar-inner
+					a(data-toggle="collapse",data-target=".nav-collapse").btn.btn-navbar
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a(href="/").brand  My Cellar Conditions
+					.nav-collapse.collapse
+						ul.nav
+							li 
+								a(href="/chart") 
+									i.icon-calendar
+									| Chart
+							li 
+								a(href="/csv") 
+									i.icon-upload
+									| Upload
+						ul.nav.pull-right
+							li 
+								a(href="/logout")
+									i.icon-off
+									| Logout
+									
+		block content
+		
+	block foot
+		#footer
+			.container
+				p.muted.credit Developed with <a href="http://c9.io" />Cloud9 IDE</a>. Powered by <a href="http://forecast.io/">forecast.io</a> and <a href="https://tempo-db.com/">tempo-db.com</a>. Hosted on <a href="https://www.heroku.com/">Heroku.com</a>

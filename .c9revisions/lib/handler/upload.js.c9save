@@ -278,3 +278,22 @@
 {"ts":1369325021057,"patch":[[{"diffs":[[0,":00 GMT'"],[-1,"'"],[0," ); //TO"]],"start1":945,"start2":945,"length1":17,"length2":16}]],"length":1307,"saved":false}
 {"ts":1369325024203,"patch":[[{"diffs":[[0,"ate+"],[-1,"'+ "],[0,"':00"]],"start1":937,"start2":937,"length1":11,"length2":8}]],"length":1304,"saved":false}
 {"ts":1369325084700,"patch":[[{"diffs":[[0,"; //"],[-1,"TODO"],[1,"Fix"],[0," pb "]],"start1":952,"start2":952,"length1":12,"length2":11}]],"length":1303,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1371130980756,"patch":[[{"diffs":[[0,"e: '"],[-1,"CSV upload form"],[1,"Upload de fichier CSV du USB datalogger"],[0,"'});"]],"start1":165,"start2":165,"length1":23,"length2":47}]],"length":1327,"saved":false}
+{"ts":1371130984761,"patch":[[{"diffs":[[0," du USB "],[-1,"d"],[1,"D"],[0,"atalogge"]],"start1":190,"start2":190,"length1":17,"length2":17}]],"length":1327,"saved":false}
+{"ts":1371130987154,"patch":[[{"diffs":[[0,"CSV "],[-1,"du "],[0,"USB "]],"start1":187,"start2":187,"length1":11,"length2":8}]],"length":1324,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1371200924259,"patch":[[{"diffs":[[0,"eader(req.files."],[-1,"csv"],[0,"uploadfile.path,"]],"start1":408,"start2":408,"length1":35,"length2":32}]],"length":1321,"saved":false}
+{"ts":1371200927974,"patch":[[{"diffs":[[0,"q.files."],[1,"file"],[0,"uploadfi"]],"start1":416,"start2":416,"length1":16,"length2":20},{"diffs":[[0,"ileuploadfil"],[-1,"e"],[0,".path, {\n\t\t\t"]],"start1":425,"start2":425,"length1":25,"length2":24}]],"length":1324,"saved":false}
+{"ts":1371200929242,"patch":[[{"diffs":[[0,"leupload"],[-1,"fil"],[0,".path, {"]],"start1":426,"start2":426,"length1":19,"length2":16}]],"length":1321,"saved":false}
+{"ts":1371200935447,"patch":[[{"diffs":[[0,"q.files."],[-1,"csv"],[1,"file"],[0,"upload"],[-1,"file"],[0,".path);\n"]],"start1":271,"start2":271,"length1":29,"length2":26}]],"length":1318,"saved":false}
+{"ts":1371200936617,"patch":[[{"diffs":[[0,"les."],[-1,"csv"],[1,"file"],[0,"upload"],[-1,"file"],[0,".siz"]],"start1":317,"start2":317,"length1":21,"length2":18}]],"length":1315,"saved":false}
+{"ts":1371200965777,"patch":[[{"diffs":[[0,"];\n\t\t\n\t\t"],[1,"//"],[0,"db.tempo"]],"start1":1228,"start2":1228,"length1":16,"length2":18}]],"length":1317,"saved":false}
+{"ts":1371200969764,"patch":[[{"diffs":[[0,"dity) }];\n\t\t"],[1,"console.log"],[0,"\n\t\t//db.temp"]],"start1":1221,"start2":1221,"length1":24,"length2":35}]],"length":1328,"saved":false}
+{"ts":1371200971944,"patch":[[{"diffs":[[0,"sole.log"],[1,"(JS)"],[0,"\n\t\t//db."]],"start1":1236,"start2":1236,"length1":16,"length2":20}]],"length":1332,"saved":false}
+{"ts":1371200974183,"patch":[[{"diffs":[[0,"e.log(JS"],[1,"ON.Stringi"],[0,")\n\t\t//db"]],"start1":1239,"start2":1239,"length1":16,"length2":26}]],"length":1342,"saved":false}
+{"ts":1371200975314,"patch":[[{"diffs":[[0,".Stringi"],[1,"fy()"],[0,")\n\t\t//db"]],"start1":1249,"start2":1249,"length1":16,"length2":20}]],"length":1346,"saved":false}
+{"ts":1371200981894,"patch":[[{"diffs":[[0,"og(JSON."],[-1,"S"],[1,"s"],[0,"tringify"]],"start1":1242,"start2":1242,"length1":17,"length2":17},{"diffs":[[0,"ingify()"],[1,"()"],[0,")\n\t\t//db"]],"start1":1253,"start2":1253,"length1":16,"length2":18}]],"length":1348,"saved":false}
+{"ts":1371200983238,"patch":[[{"diffs":[[0,"fy()"],[-1,"())"],[0,"\n\t\t/"]],"start1":1257,"start2":1257,"length1":11,"length2":8}]],"length":1345,"saved":false}
+{"ts":1371200986229,"patch":[[{"diffs":[[0,"ingify()"],[1,");"],[0,"\n\t\t//db."]],"start1":1253,"start2":1253,"length1":16,"length2":18}]],"length":1347,"saved":false}
+{"ts":1371200988311,"patch":[[{"diffs":[[0,"ringify("],[1,"te"],[0,"));\n\t\t//"]],"start1":1252,"start2":1252,"length1":16,"length2":18}]],"length":1349,"saved":false}
+{"ts":1371200990730,"patch":[[{"diffs":[[0,"ngify(te"],[1,"mpodata"],[0,"));\n\t\t//"]],"start1":1254,"start2":1254,"length1":16,"length2":23}]],"length":1356,"saved":false}
+{"ts":1371201074439,"patch":[[{"diffs":[[0,"ta));\n\t\t"],[-1,"//"],[0,"db.tempo"]],"start1":1267,"start2":1267,"length1":18,"length2":16}]],"length":1354,"saved":false}

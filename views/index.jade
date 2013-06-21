@@ -1,3 +1,12 @@
-h1= title
-p Welcome to #{title}
+extends layout
 
+style(type='text/css')
+	html,body {
+		height: 100%;
+	}
+			
+block content
+	#wrap
+		.container
+			h1= title
+			p Welcome to #{title}

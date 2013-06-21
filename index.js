@@ -4,7 +4,7 @@ require('./lib/config');
 var debug = require('debug')('app'),
 server = require('./lib/server'),
 db = require('./lib/db'),
-handler = require('./lib/handler')(db);
+handler = require('./lib/handler')(db, server);
 
 // Setup routes
 require('./lib/router')(server, handler);
