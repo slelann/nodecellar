@@ -10,3 +10,8 @@ block content
 		.container
 			h1= title
 			p Welcome to #{title}
+
+			form(action="/series/data", method="post")
+				input(type="hidden", name="key", id='key', value='location:cellar.humidity.1')
+				input(type="hidden", name="value", id='value', value='82')
+				button(type="submit").btn.btn-primary POST

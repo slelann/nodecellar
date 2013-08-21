@@ -56,12 +56,10 @@ function insertWeatherData (err, res, data) {
 	else {
 		var tempOutsideKey = 'location:outside.temperature.1';
 		var humOutsideKey  = 'location:outside.humidity.1';
-		var temp=data.currently.temperature;
-		var hum=data.currently.humidity * 100;
 		var date=new Date();
 		
 		var tempoData = [{key:tempOutsideKey, v: data.currently.temperature},
-					{key:humOutsideKey, v: data.currently.humidity * 100}];
+						 {key:humOutsideKey, v: data.currently.humidity * 100}];
 						
 		var cb = function(result){ console.log('Weather data insertion for ' + date + ' : ' + result.response); };
 

@@ -142,3 +142,6 @@
 {"ts":1371216526463,"patch":[[{"diffs":[[0,"{title}\n"],[-1,"\n\n"],[0,"\tscript."]],"start1":139,"start2":139,"length1":18,"length2":16}]],"length":173,"saved":false}
 {"ts":1371216614875,"patch":[[{"diffs":[[0,"le}\n"],[-1,"\tscript.\n\t\talert('test');"],[0,"\n"]],"start1":143,"start2":143,"length1":30,"length2":5}]],"length":148,"saved":false}
 {"ts":1371216616349,"patch":[[{"diffs":[[0,"{title}\n"],[-1,"\n"]],"start1":139,"start2":139,"length1":9,"length2":8}]],"length":147,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1376052399333,"patch":[[{"diffs":[[0,"{title}\n"],[1,"\t\t\tform(action=\"/series/data\", method=\"post\")\n\t\t\t\tinput(type=\"hidden\", name=\"key\", id='key', value='location:cellar.humidity.1')\n\t\t\t\tinput(type=\"hidden\", name=\"value\", id='value', value='82')\n\t\t\t\tbutton(type=\"submit\").btn.btn-primary POST\n"]],"start1":139,"start2":139,"length1":8,"length2":247}]],"length":386,"saved":false}
+{"ts":1376052402958,"patch":[[{"diffs":[[0,"{title}\n"],[-1,"\t\t"],[1,"\n"],[0,"\tform(ac"]],"start1":139,"start2":139,"length1":18,"length2":17}]],"length":385,"saved":false}
+{"ts":1376052405472,"patch":[[{"diffs":[[0,"title}\n\n"],[1,"\t\t"],[0,"\tform(ac"]],"start1":140,"start2":140,"length1":16,"length2":18}]],"length":387,"saved":false}

@@ -90,3 +90,21 @@
 {"ts":1371719553844,"patch":[[{"diffs":[[0,"s/data',"],[1," restrict,"],[0," handler"]],"start1":616,"start2":616,"length1":16,"length2":26},{"diffs":[[0,"/chart',"],[1," restrict,"],[0," handler"]],"start1":675,"start2":675,"length1":16,"length2":26}]],"length":780,"saved":false}
 {"ts":1371719576885,"patch":[[{"diffs":[[0,"terface\n    "],[1,"//"],[0,"impl.impleme"]],"start1":294,"start2":294,"length1":24,"length2":26}]],"length":782,"saved":false}
 {"ts":1371719579879,"patch":[[{"diffs":[[0,"ace\n    "],[-1,"//"],[0,"impl.imp"]],"start1":298,"start2":298,"length1":18,"length2":16}]],"length":780,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1376038764622,"patch":[[{"diffs":[[0,": impl.F});\n"],[1,"\timpl.implements(handler, {chartData: impl.F});\n"],[0,"    \n    //T"]],"start1":500,"start2":500,"length1":24,"length2":72}]],"length":828,"saved":false}
+{"ts":1376038768483,"patch":[[{"diffs":[[0,"s(handler, {"],[-1,"chartData"],[1,"insert"],[0,": impl.F});\n"]],"start1":527,"start2":527,"length1":33,"length2":30}]],"length":825,"saved":false}
+{"ts":1376038771070,"patch":[[{"diffs":[[0," {insert"],[1,"Data"],[0,": impl.F"]],"start1":537,"start2":537,"length1":16,"length2":20}]],"length":829,"saved":false}
+{"ts":1376038776893,"patch":[[{"diffs":[[0,"chartData);\n"],[1,"    app.get('/chartData', restrict, handler.chartData);\n"],[0,"    \n};\n"]],"start1":809,"start2":809,"length1":20,"length2":76}]],"length":885,"saved":false}
+{"ts":1376038780935,"patch":[[{"diffs":[[0,"strict, handler."],[-1,"cha"],[1,"inse"],[0,"rtData);\n    \n};"]],"start1":849,"start2":849,"length1":35,"length2":36}]],"length":886,"saved":false}
+{"ts":1376038785552,"patch":[[{"diffs":[[0,";\n    app.get('/"],[-1,"cha"],[1,"inse"],[0,"rtData', restric"]],"start1":819,"start2":819,"length1":35,"length2":36}]],"length":887,"saved":false}
+{"ts":1376038791119,"patch":[[{"diffs":[[0,"    app."],[-1,"get"],[1,"po"],[0,"('/inser"]],"start1":821,"start2":821,"length1":19,"length2":18}]],"length":886,"saved":false}
+{"ts":1376038791848,"patch":[[{"diffs":[[0,"  app.po"],[1,"st"],[0,"('/inser"]],"start1":823,"start2":823,"length1":16,"length2":18}]],"length":888,"saved":false}
+{"ts":1376038842368,"patch":[[{"diffs":[[0,"nsertData', "],[-1,"restrict,"],[0," handler.ins"]],"start1":837,"start2":837,"length1":33,"length2":24}]],"length":879,"saved":false}
+{"ts":1376038843528,"patch":[[{"diffs":[[0,"rtData',"],[-1," "],[0," handler"]],"start1":840,"start2":840,"length1":17,"length2":16}]],"length":878,"saved":false}
+{"ts":1376038852922,"patch":[[{"diffs":[[0,".post('/"],[1,"series/"],[0,"insertDa"]],"start1":828,"start2":828,"length1":16,"length2":23}]],"length":885,"saved":false}
+{"ts":1376038865541,"patch":[[{"diffs":[[0,"/series/"],[-1,"insertD"],[1,"d"],[0,"ata', ha"]],"start1":835,"start2":835,"length1":23,"length2":17}]],"length":879,"saved":false}
+{"ts":1376038929231,"patch":[[{"diffs":[[0,"ndler.insert"],[1,"Series"],[0,"Data);\n    \n"]],"start1":852,"start2":852,"length1":24,"length2":30}]],"length":885,"saved":false}
+{"ts":1376038935522,"patch":[[{"diffs":[[0," {insert"],[1,"Series"],[0,"Data: im"]],"start1":537,"start2":537,"length1":16,"length2":22}]],"length":891,"saved":false}
+{"ts":1376038951041,"patch":[[{"diffs":[[0,"SeriesData);"],[-1,"\n"],[0,"    \n};\n"]],"start1":870,"start2":870,"length1":21,"length2":20}]],"length":890,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1376057036104,"patch":[[{"diffs":[[0,"/data', "],[1,"rest"],[0,"handler."]],"start1":848,"start2":848,"length1":16,"length2":20}]],"length":894,"saved":false}
+{"ts":1376057038535,"patch":[[{"diffs":[[0,"a', rest"],[-1,"handler"],[1,"rict, "],[0,".insertS"]],"start1":852,"start2":852,"length1":23,"length2":22}]],"length":893,"saved":false}
+{"ts":1376057039770,"patch":[[{"diffs":[[0,"strict, "],[1,"handler"],[0,".insertS"]],"start1":858,"start2":858,"length1":16,"length2":23}]],"length":900,"saved":false}
