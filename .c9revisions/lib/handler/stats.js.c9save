@@ -1,0 +1,6 @@
+{"ts":1377185649797,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1377185651442,"patch":[[{"diffs":[[1,"module.exports = function(db) {\n\tvar handler = {};\n\n\thandler.renderCurrentTemp  = function (req, res) {\n\t\t\tdb.forecastio.get(req, function(err,result,data) {\n             res.send(data);\n\t\t\t});\n         };\n  \n  return handler;\n}"]],"start1":0,"start2":0,"length1":0,"length2":228}]],"length":228,"saved":false}
+{"ts":1377185655737,"patch":[[{"diffs":[[0,"nder"],[-1,"CurrentTemp"],[1,"Stats"],[0,"  = "]],"start1":63,"start2":63,"length1":19,"length2":13}]],"length":222,"saved":false}
+{"ts":1377185686463,"patch":[[{"diffs":[[0,"\n\t\t\t"],[-1,"db.forecastio.get(req, function(err,result,data) {\n             res.send(data);\n\t\t\t"],[1,"res.render('index', {title: \"My cellar conditions\""],[0,"});\n"]],"start1":97,"start2":97,"length1":91,"length2":58}]],"length":189,"saved":false}
+{"ts":1377185689550,"patch":[[{"diffs":[[0,"er('"],[-1,"index"],[1,"stats"],[0,"', {"]],"start1":109,"start2":109,"length1":13,"length2":13}]],"length":189,"saved":false}
+{"ts":1377185694141,"patch":[[{"diffs":[[0,"lar "],[-1,"condition"],[1,"stat"],[0,"s\"})"]],"start1":136,"start2":136,"length1":17,"length2":12}]],"length":184,"saved":false}

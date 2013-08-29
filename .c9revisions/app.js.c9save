@@ -1,3 +1,26 @@
 {"ts":1371654949838,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"// -- Module dependencies.\nvar debug = require('debug')('app'),\n\texpress = require('express'),\n    http = require('http'),\n    db = require('./lib/db');\n\n// -- Create Express instance and export\nvar app = express();\n    \n// -- Apply Config\nrequire('./lib/config').apply(app);\n\n//Handler\nvar handler = require('./lib/handler/index')(db);\n\n// -- Routes\nrequire('./lib/router/index')(app, handler);\n\nhttp.createServer(app).listen(process.env.PORT, function(){\n\tdebug(\"Express server listening on port %d in %s mode\", process.env.PORT, process.env.NODE_ENV);\n});\n\n"]],"start1":0,"start2":0,"length1":0,"length2":560}]],"length":560}
 {"contributors":[],"silentsave":true,"ts":1371655322283,"patch":[[{"diffs":[[0,"r app = "],[1,"module.exports ="],[0,"express("]],"start1":197,"start2":197,"length1":16,"length2":32}]],"length":576,"saved":false}
 {"ts":1371655323279,"patch":[[{"diffs":[[0,"xports ="],[1," "],[0,"express("]],"start1":213,"start2":213,"length1":16,"length2":17}]],"length":577,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1377266589326,"patch":[[{"diffs":[[0,"E_ENV);\n"],[1,"\tde\n"],[0,"});\n\n"]],"start1":564,"start2":564,"length1":13,"length2":17}]],"length":581,"saved":false}
+{"ts":1377266590811,"patch":[[{"diffs":[[0,"NV);\n\tde"],[1,"bug"],[0,"\n});\n\n"]],"start1":567,"start2":567,"length1":14,"length2":17}]],"length":584,"saved":false}
+{"ts":1377266592056,"patch":[[{"diffs":[[0,";\n\tdebug"],[1,"()"],[0,"\n});\n\n"]],"start1":570,"start2":570,"length1":14,"length2":16}]],"length":586,"saved":false}
+{"ts":1377266592969,"patch":[[{"diffs":[[0,"\n\tdebug("],[1,"var uristring = process.env.MONGOLAB_URI;"],[0,")\n});\n\n"]],"start1":571,"start2":571,"length1":15,"length2":56}]],"length":627,"saved":false}
+{"ts":1377266596527,"patch":[[{"diffs":[[0,"AB_URI;)"],[1,";"],[0,"\n});\n\n"]],"start1":613,"start2":613,"length1":14,"length2":15}]],"length":628,"saved":false}
+{"ts":1377266597661,"patch":[[{"diffs":[[0,"OLAB_URI"],[-1,";"],[0,");\n});\n\n"]],"start1":611,"start2":611,"length1":17,"length2":16}]],"length":627,"saved":false}
+{"ts":1377266601078,"patch":[[{"diffs":[[0,"\n\tdebug("],[-1,"var "],[1,"\""],[0,"uristrin"]],"start1":571,"start2":571,"length1":20,"length2":17}]],"length":624,"saved":false}
+{"ts":1377266602781,"patch":[[{"diffs":[[0,"string ="],[1,"\""],[0," process"]],"start1":583,"start2":583,"length1":16,"length2":17}]],"length":625,"saved":false}
+{"ts":1377266603808,"patch":[[{"diffs":[[0,"tring =\""],[1,"+"],[0," process"]],"start1":584,"start2":584,"length1":16,"length2":17}]],"length":626,"saved":false}
+{"ts":1377266604874,"patch":[[{"diffs":[[0,"string ="],[1," "],[0,"\"+ proce"]],"start1":583,"start2":583,"length1":16,"length2":17}]],"length":627,"saved":false}
+{"ts":1377266718470,"patch":[[{"diffs":[[0,"ug(\""],[-1,"uristring"],[1,"env"],[0," = \""]],"start1":576,"start2":576,"length1":17,"length2":11}]],"length":621,"saved":false}
+{"ts":1377266722179,"patch":[[{"diffs":[[0,".env"],[-1,".MONGOLAB_URI"],[0,");\n}"]],"start1":596,"start2":596,"length1":21,"length2":8}]],"length":608,"saved":false}
+{"ts":1377266742770,"patch":[[{"diffs":[[0,"nv = \"+ "],[1,"ut"],[0,"process."]],"start1":581,"start2":581,"length1":16,"length2":18}]],"length":610,"saved":false}
+{"ts":1377266744615,"patch":[[{"diffs":[[0," = \"+ ut"],[1,"il."],[0,"process."]],"start1":583,"start2":583,"length1":16,"length2":19}]],"length":613,"saved":false}
+{"ts":1377266746044,"patch":[[{"diffs":[[0,"\"+ util."],[1,"in"],[0,"process."]],"start1":586,"start2":586,"length1":16,"length2":18}]],"length":615,"saved":false}
+{"ts":1377266747337,"patch":[[{"diffs":[[0," util.in"],[1,"s"],[0,"process."]],"start1":588,"start2":588,"length1":16,"length2":17}]],"length":616,"saved":false}
+{"ts":1377266749449,"patch":[[{"diffs":[[0,"til.insp"],[1,"ectp"],[0,"rocess.e"]],"start1":590,"start2":590,"length1":16,"length2":20}]],"length":620,"saved":false}
+{"ts":1377266750459,"patch":[[{"diffs":[[0,".inspect"],[1,"("],[0,"process."]],"start1":593,"start2":593,"length1":16,"length2":17}]],"length":621,"saved":false}
+{"ts":1377266753644,"patch":[[{"diffs":[[0,"ess.env)"],[1,")"],[0,";\n});\n\n"]],"start1":606,"start2":606,"length1":15,"length2":16}]],"length":622,"saved":false}
+{"ts":1377266759215,"patch":[[{"diffs":[[0,"'http'),"],[1," util "],[0,"\n    db "]],"start1":114,"start2":114,"length1":16,"length2":22}]],"length":628,"saved":false}
+{"ts":1377266760553,"patch":[[{"diffs":[[0,"), util "],[1,"= re"],[0,"\n    db "]],"start1":120,"start2":120,"length1":16,"length2":20}]],"length":632,"saved":false}
+{"ts":1377266761938,"patch":[[{"diffs":[[0,"til = re"],[1,"qui"],[0,"\n    db "]],"start1":124,"start2":124,"length1":16,"length2":19}]],"length":635,"saved":false}
+{"ts":1377266763855,"patch":[[{"diffs":[[0," = requi"],[1,"re(\"util\")"],[0,"\n    db "]],"start1":127,"start2":127,"length1":16,"length2":26}]],"length":645,"saved":false}

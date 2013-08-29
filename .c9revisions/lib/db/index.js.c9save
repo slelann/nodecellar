@@ -5,3 +5,12 @@
 {"ts":1368619720022,"patch":[[{"diffs":[[-1,"var debug = require('debug')('db');"],[1,"module.exports.forecastio = require('./forecastio')"]],"start1":0,"start2":0,"length1":35,"length2":51}]],"length":51,"saved":false}
 {"contributors":[],"silentsave":true,"ts":1368621479856,"patch":[[{"diffs":[[-1,"module.exports.forecastio = require('./forecastio"],[1,"var debug = require('debug')('db"],[0,"')"],[1,";"]],"start1":0,"start2":0,"length1":51,"length2":35}]],"length":35,"saved":false}
 {"ts":1368621489551,"patch":[[{"diffs":[[-1,"var debug = require('debug')('"],[1,"module.exports.forecastio = require('./forecastio')\nmodule.exports.tempodb = require('./tempo"],[0,"db')"],[-1,";"]],"start1":0,"start2":0,"length1":35,"length2":97}]],"length":97,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1377077411322,"patch":[[{"diffs":[[0,"castio')"],[1,";"],[0,"\nmodule."]],"start1":43,"start2":43,"length1":16,"length2":17},{"diffs":[[0,"empodb')"],[1,";"]],"start1":90,"start2":90,"length1":8,"length2":9}]],"length":99,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1377181015146,"patch":[[{"diffs":[[0,"mpodb');"],[1,"\nmodule.exports.tempodb = require('./tempodb');"]],"start1":91,"start2":91,"length1":8,"length2":55}]],"length":146,"saved":false}
+{"ts":1377181018220,"patch":[[{"diffs":[[0,"empodb = require('./"],[-1,"tempo"],[1,"mon"],[0,"db');"]],"start1":116,"start2":116,"length1":30,"length2":28}]],"length":144,"saved":false}
+{"ts":1377181018843,"patch":[[{"diffs":[[0,"e('./mon"],[1,"go"],[0,"db');"]],"start1":131,"start2":131,"length1":13,"length2":15}]],"length":146,"saved":false}
+{"ts":1377181023999,"patch":[[{"diffs":[[0,"\nmodule.exports."],[-1,"temp"],[1,"mong"],[0,"odb = require('."]],"start1":99,"start2":99,"length1":36,"length2":36}]],"length":146,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1377518392377,"patch":[[{"diffs":[[0,"./mongodb');"],[1,"\nmodule.exports.mongodb = require('./mongodb');"]],"start1":134,"start2":134,"length1":12,"length2":59}]],"length":193,"saved":false}
+{"ts":1377518395291,"patch":[[{"diffs":[[0,"ongodb = require('./"],[-1,"mongodb"],[1,"cella"],[0,"');"]],"start1":163,"start2":163,"length1":30,"length2":28}]],"length":191,"saved":false}
+{"ts":1377518397585,"patch":[[{"diffs":[[0,"'./cella"],[1,"rtra"],[0,"');"]],"start1":180,"start2":180,"length1":11,"length2":15}]],"length":195,"saved":false}
+{"ts":1377518399307,"patch":[[{"diffs":[[0,"ellartra"],[1,"cker"],[0,"');"]],"start1":184,"start2":184,"length1":11,"length2":15}]],"length":199,"saved":false}
