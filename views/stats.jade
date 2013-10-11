@@ -1,6 +1,118 @@
 extends layout
 
+block append scripts
+		script(src="../js/raphael-min.js")
+		script(src="../js/g.raphael.min.js")
+		script(src="../js/g.pie.js")
+
+block append styles
+		link(href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css', rel='stylesheet')
+
 block content
 	#wrap
 		.container
 			h2 #{title}
+			#stats_container
+				#country_chart
+				#type_chart
+				#vintage_chart
+	script(type="text/javascript")
+		function drawCountryChart2() {
+			$.get('/stats/country', function(data) {
+				alert(data);
+				var r = Raphael("country_chart");
+				// var pie = r.piechart(320, 240, 100, data.countriesStats, { legend: data.countries});
+				// r.text(320, 100, "Country stats Chart").attr({ font: "14px sans-serif" });
+				// pie.hover(function () {
+				// 	this.sector.stop();
+				// 	this.sector.scale(1.1, 1.1, this.cx, this.cy);
+				// 	if (this.label) {
+				// 		this.label[0].stop();
+				// 		this.label[0].attr({ r: 7.5 });
+				// 		this.label[1].attr({ "font-weight": 800 });
+				// 	}
+				// }, function () {
+				// 	this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 500, "bounce");
+				// 	if (this.label) {
+				// 		this.label[0].animate({ r: 5 }, 500, "bounce");
+				// 		this.label[1].attr({ "font-weight": 400 });
+				// 	}
+				// });
+			};
+		}
+
+		// function drawCountryChart() {
+		// 	var r = Raphael("country_chart");
+		// 	var pie = r.piechart(320, 240, 100, countriesStats, { legend: countries});
+		// 	r.text(320, 100, "Country stats Chart").attr({ font: "14px sans-serif" });
+		// 	pie.hover(function () {
+		// 		this.sector.stop();
+		// 		this.sector.scale(1.1, 1.1, this.cx, this.cy);
+		// 		if (this.label) {
+		// 			this.label[0].stop();
+		// 			this.label[0].attr({ r: 7.5 });
+		// 			this.label[1].attr({ "font-weight": 800 });
+		// 		}
+		// 	}, function () {
+		// 		this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 500, "bounce");
+		// 		if (this.label) {
+		// 			this.label[0].animate({ r: 5 }, 500, "bounce");
+		// 			this.label[1].attr({ "font-weight": 400 });
+		// 		}
+		// 	});
+		// };
+
+		// function drawTypeChart() {
+		// 	var r = Raphael("type_chart");
+		// 	var pie = r.piechart(320, 240, 100, typesStats, { legend: types});
+		// 	r.text(320, 100, "Type stats Chart").attr({ font: "14px sans-serif" });
+		// 	pie.hover(function () {
+		// 		this.sector.stop();
+		// 		this.sector.scale(1.1, 1.1, this.cx, this.cy);
+		// 		if (this.label) {
+		// 			this.label[0].stop();
+		// 			this.label[0].attr({ r: 7.5 });
+		// 			this.label[1].attr({ "font-weight": 800 });
+		// 		}
+		// 	}, function () {
+		// 		this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 500, "bounce");
+		// 		if (this.label) {
+		// 			this.label[0].animate({ r: 5 }, 500, "bounce");
+		// 			this.label[1].attr({ "font-weight": 400 });
+		// 		}
+		// 	});
+		// };
+
+		// function drawVintageChart() {
+		// 	var r = Raphael("Vintage_chart");
+		// 	var pie = r.piechart(320, 240, 100, vintagesStats, { legend: vintages});
+		// 	r.text(320, 100, "Vintage stats Chart").attr({ font: "14px sans-serif" });
+		// 	pie.hover(function () {
+		// 		this.sector.stop();
+		// 		this.sector.scale(1.1, 1.1, this.cx, this.cy);
+		// 		if (this.label) {
+		// 			this.label[0].stop();
+		// 			this.label[0].attr({ r: 7.5 });
+		// 			this.label[1].attr({ "font-weight": 800 });
+		// 		}
+		// 	}, function () {
+		// 		this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 500, "bounce");
+		// 		if (this.label) {
+		// 			this.label[0].animate({ r: 5 }, 500, "bounce");
+		// 			this.label[1].attr({ "font-weight": 400 });
+		// 		}
+		// 	});
+		// };
+
+		// Obligation de modifier les variables renvoyées par JADE/EXPRESS pour cooler aux formats attendus par raphael...
+		//var countriesStats = '#{countriesStats}'.split(',').map(function (x) { return parseInt(x); });
+		//var countries = '#{countries}'.split(',');
+		//var typesStats = '#{typesStats}'.split(',').map(function (x) { return parseInt(x); });
+		//var types = '#{types}'.split(',');
+		//var vintagesStats = '#{vintagesStats}'.split(',').map(function (x) { return parseInt(x); });
+		//var vintages = '#{vintages}'.split(',');
+
+		//Dessin des charts
+		drawCountryChart2();
+		//drawVintageChart();
+		//drawTypeChart();

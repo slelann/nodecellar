@@ -259,3 +259,20 @@
 {"ts":1368713992585,"patch":[[{"diffs":[[0,"\n}\n\n"],[-1,"// Coordonnees de Chevaigne\nvar latitude  = \"48.2097\";\nvar longitude = \"-1.6298\";\n\n// Coordonnees de Rennes\n//var latitude  = \"48.1076\";\n//var longitude = \"-1.6845\";\n"],[0,"\nvar"]],"start1":571,"start2":571,"length1":174,"length2":8}]],"length":794,"saved":false}
 {"ts":1368713997683,"patch":[[{"diffs":[[0,"(key);\n\n"],[1,"// Coordonnees de Chevaigne\nvar latitude  = \"48.2097\";\nvar longitude = \"-1.6298\";\n\n// Coordonnees de Rennes\n//var latitude  = \"48.1076\";\n//var longitude = \"-1.6845\";\n\n"],[0,"// inser"]],"start1":269,"start2":269,"length1":16,"length2":183}]],"length":961,"saved":false}
 {"ts":1368714092212,"patch":[[{"diffs":[[0,"');\n"],[-1,"var tempodb = require('tempodb');"],[0,"\n\n//"]],"start1":35,"start2":35,"length1":41,"length2":8}]],"length":928,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1381502226639,"patch":[[{"diffs":[[0,".io');\n\n"],[1,"debug"],[0,"\n//  API"]],"start1":32,"start2":32,"length1":16,"length2":21}]],"length":933,"saved":false}
+{"ts":1381502227214,"patch":[[{"diffs":[[0,";\n\ndebug"],[1,"()"],[0,"\n//  API"]],"start1":37,"start2":37,"length1":16,"length2":18}]],"length":935,"saved":false}
+{"ts":1381502230368,"patch":[[{"diffs":[[0,"st.io');"],[1,"\nva"],[0,"\n\ndebug("]],"start1":30,"start2":30,"length1":16,"length2":19}]],"length":938,"saved":false}
+{"ts":1381502231946,"patch":[[{"diffs":[[0,"io');\nva"],[1,"r deb"],[0,"\n\ndebug("]],"start1":33,"start2":33,"length1":16,"length2":21}]],"length":943,"saved":false}
+{"ts":1381502233241,"patch":[[{"diffs":[[0,"\nvar deb"],[1,"ug"],[0,"\n\ndebug("]],"start1":38,"start2":38,"length1":16,"length2":18}]],"length":945,"saved":false}
+{"ts":1381502234625,"patch":[[{"diffs":[[0,"ar debug"],[1," = "],[0,"\n\ndebug("]],"start1":40,"start2":40,"length1":16,"length2":19}]],"length":948,"saved":false}
+{"ts":1381502236384,"patch":[[{"diffs":[[0,"debug = "],[1,"req"],[0,"\n\ndebug("]],"start1":43,"start2":43,"length1":16,"length2":19}]],"length":951,"saved":false}
+{"ts":1381502239291,"patch":[[{"diffs":[[0,"ug = req"],[1,"uire(\"\")"],[0,"\n\ndebug("]],"start1":46,"start2":46,"length1":16,"length2":24}]],"length":959,"saved":false}
+{"ts":1381502242213,"patch":[[{"diffs":[[0,"ire("],[-1,"\"\""],[1,"'d'"],[0,")\n\nd"]],"start1":55,"start2":55,"length1":10,"length2":11}]],"length":960,"saved":false}
+{"ts":1381502243790,"patch":[[{"diffs":[[0,"quire('d"],[1,"ebug"],[0,"')\n\ndebu"]],"start1":53,"start2":53,"length1":16,"length2":20}]],"length":964,"saved":false}
+{"ts":1381502261431,"patch":[[{"diffs":[[0,"'debug')"],[1,"('handler');"],[0,"\n\ndebug("]],"start1":59,"start2":59,"length1":16,"length2":28}]],"length":976,"saved":false}
+{"ts":1381502263071,"patch":[[{"diffs":[[0,"')('"],[-1,"handler"],[1,"db"],[0,"');\n"]],"start1":65,"start2":65,"length1":15,"length2":10}]],"length":971,"saved":false}
+{"ts":1381502266845,"patch":[[{"diffs":[[0,"\n\ndebug("],[1,"''"],[0,")\n//  AP"]],"start1":74,"start2":74,"length1":16,"length2":18}]],"length":973,"saved":false}
+{"ts":1381502269787,"patch":[[{"diffs":[[0,"\ndebug('"],[1,"forecas"],[0,"')\n//  A"]],"start1":75,"start2":75,"length1":16,"length2":23}]],"length":980,"saved":false}
+{"ts":1381502271431,"patch":[[{"diffs":[[0,"'forecas"],[1,"t.io"],[0,"')\n//  A"]],"start1":82,"start2":82,"length1":16,"length2":20}]],"length":984,"saved":false}
+{"ts":1381502272384,"patch":[[{"diffs":[[0,"st.io')\n"],[1,"\n"],[0,"//  APIK"]],"start1":89,"start2":89,"length1":16,"length2":17}]],"length":985,"saved":false}
+{"ts":1381502274137,"patch":[[{"diffs":[[0,"tTime();"],[-1," "],[0,"\n\nmodule"]],"start1":880,"start2":880,"length1":17,"length2":16}]],"length":984,"saved":false}

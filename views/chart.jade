@@ -1,4 +1,4 @@
-extends layout 
+extends layout
 
 block append scripts
 		script(src="../js/vendor/d3.v2.js")
@@ -41,9 +41,9 @@ block append styles
 block content
 	#wrap
 		#date_container.inline
-			label Date debut: 
+			label Date debut:
 				input(type='text', name='fromdate', id='fromdate')
-			label Date fin: 
+			label Date fin:
 				input(type='text', name='todate', id='todate')
 			select#interval
 				option 1hour
@@ -58,14 +58,14 @@ block content
 				option min
 				option max
 			input(type='button', onClick='drawChart()', name='btnPlot', value='Plot chart').btn.btn-primary
-				
+
 		.container
 			#chart_container
 				#chart
 				#slider
 				#legend
 
-	script	
+	script
 		function clearGraph() {
 			$('#legend').empty();
 			$('#chart_container').html(
@@ -78,11 +78,11 @@ block content
 			var rollupfn=selectrollup.options[selectrollup.selectedIndex].value;
 			var selectinterval=document.getElementById("interval");
 			var interval=selectinterval.options[selectinterval.selectedIndex].value;
-			
+
 			$.get('/chartData?fromdate='+fromdate.value+'&todate='+todate.value+'&function='+rollupfn + '&interval='+interval, function(data) {
-				
+
 				clearGraph();
-				
+
 				graph = new Rickshaw.Graph( {
 					element: document.querySelector("#chart"),
 					renderer: 'line',
@@ -90,43 +90,43 @@ block content
 					series: data,
 					min: 'auto'
 				});
-				
+
 				graph.render();
-				
+
 				var hover = new Rickshaw.Graph.HoverDetail(	{
 					graph: graph,
 					yFormatter: function(y) { if (y > 35) { return Math.round(y) + " %" } else {return Math.round(y*10)/10 + " °C"} }
-				}); 
-				
+				});
+
 				var legend = new Rickshaw.Graph.Legend({
 					graph: graph,
 					element: document.querySelector('#legend')
 				});
-				
+
 				var shelving = new Rickshaw.Graph.Behavior.Series.Toggle({
 					graph: graph,
 					legend: legend
 				});
-				
+
 				var ticksTreatment = 'glow';
 				var xAxis = new Rickshaw.Graph.Axis.Time( {
 					graph: graph,
 					ticksTreatment: ticksTreatment
 				} );
 				xAxis.render();
-				
+
 				var yAxis = new Rickshaw.Graph.Axis.Y( {
 					graph: graph,
 					tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
 					ticksTreatment: ticksTreatment
 				} );
 				yAxis.render();
-				
+
 				var slider = new Rickshaw.Graph.RangeSlider({
 				graph: graph,
 				element: document.querySelector('#slider')
 				});
-	
+
 			});
 		}
 
