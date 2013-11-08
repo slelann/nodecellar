@@ -5,8 +5,8 @@ html
 
 		block scripts
 			script(src='/js/bootstrap.min.js')
-			script(src="http://code.jquery.com/jquery-1.10.0.js")
-			
+			script(src="/js/jquery-1.10.2.min.js")
+
 		block styles
 			link(rel='stylesheet', href='/css/style.css')
 			link(rel='stylesheet', href='/css/bootstrap.min.css')
@@ -56,26 +56,26 @@ html
 					a(href="/").brand  My Cellar Conditions
 					.nav-collapse.collapse
 						ul.nav
-							li 
-								a(href="/chart") 
+							li
+								a(href="/chart")
 									i.icon-calendar
 									| Chart
-							li 
-								a(href="/csv") 
+							li
+								a(href="/csv")
 									i.icon-upload
 									| Upload
-							li 
-								a(href="/stats") 
+							li
+								a(href="/stats")
 									i.icon-upload
 									| Stats
 						ul.nav.pull-right
-							li 
+							li
 								a(href="/logout")
 									i.icon-off
 									| Logout
-									
-		block content		
-		
+
+		block content
+
 	block foot
 		#footer
 			.container
