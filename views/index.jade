@@ -1,17 +1,45 @@
 extends layout
 
-style(type='text/css')
-	html,body {
-		height: 100%;
-	}
-			
+block append scripts
+		script(src="../js/jquery-1.10.2.min.js")
+		script(src="../js/jquery.dataTables.min.js")
+
+block append styles
+		link(href='../css/jquery-ui.1.9.2.css', rel='stylesheet')
+		link(href='../css/jquery.dataTables.css', rel='stylesheet')
+		style(type='text/css')
+			html,body {
+				height: 100%;
+			}
+
 block content
 	#wrap
-		.container
-			h1= title
-			p Welcome to #{title}
+		table#ctdatatable
+			thead
+				th Rendering engine
+				th Browser
+				th Platform(s)
+				th Engine version
+				th CSS grade
+			tbody
+				td
+				td
+				td
+				td
+				td
 
-			form(action="/series/data", method="post")
-				input(type="hidden", name="key", id='key', value='location:cellar.humidity.1')
-				input(type="hidden", name="value", id='value', value='82')
-				button(type="submit").btn.btn-primary POST
+	script
+		function getCellarTrackerData() {
+			$.get('/cellartracker', function() {
+				$('#ctdatatable').dataTable(
+				
+				);
+			});
+		}
+
+	script(type="text/javascript")
+		$(document).ready(function () {
+			getCellarTrackerData();
+		});
+
+
